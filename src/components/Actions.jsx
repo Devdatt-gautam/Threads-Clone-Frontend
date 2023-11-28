@@ -61,7 +61,7 @@ const Actions = ({ post }) => {
             return { ...p, likes: [...p.likes, user._id] };
           }
           return p;
-        }); //setting posts
+        });
         setPosts(updatedPosts);
       } else {
         const updatedPosts = posts.map((p) => {
